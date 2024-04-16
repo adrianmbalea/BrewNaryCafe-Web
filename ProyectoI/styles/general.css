@@ -1,0 +1,164 @@
+  /* Estilos generales para el cuerpo del documento */
+  html {
+    font-family: 'Arial', sans-serif;
+    font-size: max(9px, 1vw);
+  }
+  
+  body {
+    color: #d7c0a1;
+    background-color: #3E2C1F; 
+  }
+  
+  /* Estilos para encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #d7c0a1;
+    margin: 20px 10px 0 10px;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+  
+  /* Estilos para los enlaces */
+  a {
+    position: relative;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #d7c0a1;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: #d7c0a1;
+    transform: scaleX(0); /* La línea comienza sin ancho */
+    transform-origin: bottom left; /* La línea comienza desde la esquina inferior izquierda */
+    transition: transform 0.3s ease; /* Agrega una transición para la animación */
+  }
+
+  a:hover::before {
+    transform: scaleX(1); /* La línea se expande completamente al pasar el ratón */
+    transform-origin: bottom left; /* La línea se expande desde la esquina inferior derecha */
+  }
+  
+  /* Estilos para las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para la barra de navegación */
+  nav {
+    display: flex; /* Utilizamos flex para el nav */
+    flex-direction: column; /* Al ser mobile-first, el nav es en principio una columna */
+    justify-content: center;
+    align-items: center;
+    background-color: #3E2C1F;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+  }
+
+  nav ul li {
+    font-size: max(12px, 0.83vw);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  nav ul li.active {
+    text-decoration: underline;
+  }
+
+  nav ul:first-child li {
+    margin: 0 10px;
+  }
+
+  nav ul:last-child li {
+    display: none;
+  }
+
+  /* El estilo de los enlaces dentro del nav es diferente */
+  nav ul li a {
+    color: #d7c0a1;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  nav a::before {
+    content: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: none;
+    background-color: #524945;
+  }
+
+  /* Estilos para el footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3E2C1F;
+    color: #d7c0a1; 
+    padding: 120px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-element{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-element > p {
+    margin-bottom: 0px;
+  }
+
+  /* Desktop y Tablets */
+  @media screen and (min-width: 768px){
+    nav {
+      flex-direction: row;
+    }
+
+    nav ul {
+      width: auto;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    nav ul li {
+      text-align: initial;
+      padding: 0;
+    }
+
+    nav ul:last-child li{
+      display: inline;
+      padding-top: 10px;
+      padding-left:50px;
+    }
+
+    footer {
+      flex-direction: row; /* Cambio la dirección de los elementos a filas */
+    }
+  
+    .footer-element {
+      margin-bottom: 0;
+    }
+  }

@@ -1,0 +1,125 @@
+h1 {
+  text-align: center;
+}
+
+.contactanos-texto, .formulario {
+  display: block;
+  width: 90%; 
+  margin: 0 auto; /* Centra horizontalmente */
+  box-sizing: border-box;
+  padding: 3vw;
+  text-align: left;
+}
+
+/* Desktop y Tablets */
+@media screen and (min-width: 768px){
+  h1{
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .contactanos-texto, .formulario {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.contactanos-texto p {
+  font-size: 120%;
+}
+
+.contacto-info {
+  margin-bottom: 19.2px;
+}
+
+.contacto-info p, .ubicacion-info p {
+  margin: 0;
+}
+
+form {
+  background-color: #3E2C1F;
+  color: #d7c0a1;
+}
+
+.campo-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.nombre-container label,
+.nombre-container input {
+  margin-bottom: 8px;
+}
+
+.nombre-container {
+  width: 50%;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #744c2f;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #3E2C1F;
+  color: #d7c0a1;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Estilos para el botón con transición */
+button {
+  border-radius: 15px; /* Bordes redondos */
+  background-color: #744c2f;;
+  border: none;
+  color: #d7c0a1;
+  text-align: center;
+  padding: 6px; 
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 4px;
+  right: -6px; 
+  transition: all 0.24s;
+}
+
+button:hover {
+  padding-right: 8px; 
+  padding-left: 1px; 
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 6px;
+}
+
+button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+  

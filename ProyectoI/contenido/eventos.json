@@ -1,0 +1,10 @@
+{
+  "contenedores": [
+    {
+      "titulo": "Si puedes imaginarlo, puedes programarlo",
+      "autor" : "Alejandro Taboada",
+      "imagen" : "../images/eventos/cafe_eventos.jpeg"
+    }
+  ]
+}
+

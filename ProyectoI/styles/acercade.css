@@ -1,0 +1,40 @@
+.container {
+    column-count: 2;
+    text-align: justify;
+    padding-right: 2.5%;
+}  
+
+.text {
+    column-count: 1;
+}
+
+.text p {
+    margin: 0 0 5% 10%;
+}
+
+.image img {
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen para que llene el cuadro */
+    padding-left: 10%;
+    padding-top: 7.5%;
+    padding-bottom: 5%;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 10%; 
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .container {
+        column-count: 2;
+        text-align: justify;
+        padding-right: 2.5%;
+    }  
+    
+    .text {
+        column-count: 2;
+    }
+}

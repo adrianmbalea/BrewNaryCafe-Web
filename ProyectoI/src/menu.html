@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Menú | Brew-Nary Cafe</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Cafetería de calidad en Santiago de Compostela">
+    <meta name="keywords" content="Café, croissant, hackathon, café de calidad, Santiago de Compostela">
+    <meta name="author" content="Adrián Martñinez Balea e Isaac Noya Vázquez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="plantilla.html">Plantilla</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  
+      <figure><a href="../index.html"><img src="../images/logo.png" width="70" height="70"></a></figure>
+  
+      <ul>
+        <li><figure style="width: 20px; height: 20px"><a href="http://www.x.com/brew-nary"><img src="../images/x_logo_.png" alt="X"></a></figure></li>
+        <li><figure style="width: 20px; height: 20px"><a href="http://www.instagram.com/brew-nary"><img src="../images/instagram_logo.png" alt="Instagram"></a></figure></li>
+        <li><figure style="width: 20px; height: 20px"><a href="http://www.tiktok.com/@brew-nary"><img src="../images/tiktok_logo.png" alt="TikTok"></a></figure></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+    <div class="item">
+      <h1>Menú</h1>
+    </div>
+
+    
+    <div class="contenedor">
+    
+      <div class="columna-izquierda">
+        <form action="menu.html" method="post">
+            <div class="horizontal">
+                <label>
+                    <input type="checkbox" name="categoria" value="todo" checked hidden>
+                    <span class="category">Todo</span>
+                </label><br>
+    
+                <label>
+                    <input type="checkbox" name="categoria" value="cafe" hidden>
+                    <span class="category">Café</span>
+                </label><br>
+    
+                <label>
+                    <input type="checkbox" name="categoria" value="te" hidden>
+                    <span class="category">Té</span>
+                </label><br>
+    
+                <label>
+                    <input type="checkbox" name="categoria" value="dulce" hidden>
+                    <span class="category">Algo Dulce</span>
+                </label><br>
+    
+                <label>
+                    <input type="checkbox" name="categoria" value="bebida" hidden>
+                    <span class="category">Bebidas</span>
+                </label><br>
+            </div>
+        </form>
+    </div>
+    
+    
+    
+
+      <!-- FIGURAS DE IMAGENES DE CAFES, BEBIDAS, DESAYUNOS CON SUS NOMBRES-->
+      <div class="columna-derecha">
+        <div class="grid">
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-solo.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Solo</p>
+                <p>1.20€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-con-leche.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café con Leche</p>
+                <p>1.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-americano.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Americano</p>
+                <p>1.30€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-cortado.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Cortado</p>
+                <p>1.40€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-manchado.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Manchado</p>
+                <p>1.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-bombon.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Bombón</p>
+                <p>1.60€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-capuccino.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Capuccino</p>
+                <p>1.80€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="cafe">
+              <div class="cara">
+                <figure><img src="../images/menu/cafe-frapuccino.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Café Frapuccino</p>
+                <p>2.00€</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="te">
+              <div class="cara">
+                <figure><img src="../images/menu/te-chai-latte.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Té Chai Latte</p>
+                <p>2.20€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="te">
+              <div class="cara">
+                <figure><img src="../images/menu/te-verde.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Té Verde</p>
+                <p>1.80€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="te">
+              <div class="cara">
+                <figure><img src="../images/menu/te-matcha.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Té Matcha</p>
+                <p>2.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="te">
+              <div class="cara">
+                <figure><img src="../images/menu/te-negro.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Té Negro</p>
+                <p>1.70€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/croissant.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Croissant Clásico</p>
+                <p>1.00€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/croissant-chocolate.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Croissant con Chocolate</p>
+                <p>1.20€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/croissant-pistacho.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Croissant con Pistacho</p>
+                <p>1.30€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/croissant-mermelada.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Croissant con Mermelada</p>
+                <p>1.20€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/muffin-chocolate.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Muffin de Chocolate</p>
+                <p>1.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/muffin-crema-limon.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Muffin con Crema de Limón</p>
+                <p>1.60€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/brownie.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Brownie de Chocolate</p>
+                <p>1.80€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/tarta-queso.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Tarta de Queso</p>
+                <p>2.00€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/yogur.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Yogur Griego con Nueces y Miel</p>
+                <p>1.70€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/macedonia-fruta.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Macedonia de Frutas</p>
+                <p>2.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/helado-limon.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Helado de Limón</p>
+                <p>2.00€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="dulce">
+              <div class="cara">
+                <figure><img src="../images/menu/helado-chocolate.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Helado de Chocolate</p>
+                <p>2.00€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="bebida">
+              <div class="cara">
+                <figure><img src="../images/menu/agua.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Agua</p>
+                <p>1.00€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="bebida">
+              <div class="cara">
+                <figure><img src="../images/menu/refresco.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Refresco</p>
+                <p>1.50€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="bebida">
+              <div class="cara">
+                <figure><img src="../images/menu/zumo-naranja.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Zumo de Naranja Natural</p>
+                <p>1.80€</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container" onclick="flipCard(this)">
+            <div class="item" id="bebida">
+              <div class="cara">
+                <figure><img src="../images/menu/limonada.jpeg"></figure>
+              </div>
+              <div class="cara-detras">
+                <p>Limonada</p>
+                <p>2.00€</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div> <!-- div grid -->
+      </div> <!-- div columna-derecha -->
+
+    </div> <!-- div contenedor -->
+    </main>
+
+    <footer>
+      <div class="footer-element">
+        <h2>Horario</h2>
+        <p>Lunes a Viernes</p> 
+        <p>De 7:00 a 22:00</p>
+      </div>
+      <div class="footer-element">
+        <h2>Ubicación</h2>
+        <p>Avenida Galeras, 123</p>
+        <p>Santiago de Compostela, 15701</p>
+      </div>
+      <div class="footer-element">
+        <h2>Contacto</h2>
+        <p>brewnarycafe@gmail.com</p>
+        <p>+34 666 66 66 66</p>
+      </div>
+    </footer>
+    
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/nav.js"></script>
+  </body>
+
+
+</html>

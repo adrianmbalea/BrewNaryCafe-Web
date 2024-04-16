@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container class="container-sm">
+  <row>
+    <col class="col-sm-4">
+      <figure>
+        <img src="../images/plantilla/adrian.jpeg" width="400" height="400" />
+      </figure>
+      <name>Adrián Martínez</name>
+      <description>Adrián, conocido como el "Maestro Tostador", es mucho más que un experto en café. 
+        Su pasión por los granos se refleja no solo en la selección meticulosa de los mejores productos, 
+        sino también en su dedicación a educar y cautivar a los clientes con degustaciones y eventos de café. 
+        Su compromiso con la excelencia y su capacidad para fusionar la tradición con la innovación hacen que 
+        cada taza en Brew-nary Café sea una experiencia verdaderamente única y memorable para todos los 
+        aficionados al café. Además, su calidez y entusiasmo contagioso crean un ambiente acogedor donde 
+        los clientes siempre se sienten bienvenidos y valorados.</description>
+    </col>
+    <col class="col-sm-4">
+      <figure>
+        <img src="../images/plantilla/isaac.jpeg" width="400" height="400" />
+      </figure>
+      <name>Isaac Noya</name>
+      <description>La mente detrás de las delicias horneadas de Brew-nary Café, Isaac es un chef talentoso y 
+        creativo que ha convertido los croissants y otras delicias en verdaderas obras maestras culinarias. 
+        Con una formación en repostería y un amor por los ingredientes frescos y de alta calidad, Isaac 
+        se encarga de asegurar que cada bocado en Brew-nary Café sea una experiencia deliciosa. Además de 
+        su habilidad en la cocina, Isaac también es un apasionado por la comunidad y se encarga de organizar 
+        eventos y promociones para involucrar a los clientes en la vida de la cafetería.</description>
+    </col>
+    <col class="col-sm-4">
+      <figure>
+        <img src="../images/plantilla/maria.jpeg" width="400" height="400" />
+      </figure>
+      <name>Maria Pérez</name>
+      <description>Conocida como la "Barista de la Innovación", María es la experta en café y tecnología de Brew-nary Café. 
+        Con una formación en ingeniería informática y una pasión por el café, María combina su amor por ambas 
+        disciplinas para ofrecer a los clientes experiencias únicas en cada taza. Como barista principal, María 
+        se encarga de preparar y servir el café con la precisión de una ingeniera y la creatividad de una artista. 
+        Su entusiasmo por la tecnología también la convierte en una participante destacada en los hackathones de la 
+        cafetería, donde aporta su experiencia en informática para resolver problemas y crear soluciones innovadoras.</description>
+    </col>
+  </row>
+</container>
